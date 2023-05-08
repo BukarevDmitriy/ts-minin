@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>1</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div class="wrapper wrapper--sun">
+			<h1 class="title">Weather sounds</h1>
+
+			<div class="buttons">
+				<div class="button button--sun" data-type="sun">
+					<div data-type="sun"></div>
+				</div>
+				<div class="button button--rain" data-type="rain">
+					<div data-type="rain"></div>
+				</div>
+				<div class="button button--snow" data-type="snow">
+					<div data-type="snow"></div>
+				</div>
+			</div>
+
+			<input id="volume-slider" type="range" max="100" value="100">
+
+			<audio loop>
+				<source src="" type="audio/mp3">
+			</audio>
+		</div>
+
+		<script src="dist/main.js"></script>
+	</body>
+</html>

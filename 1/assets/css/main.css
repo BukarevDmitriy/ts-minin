@@ -1,0 +1,102 @@
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 960px;
+	padding: 36px;
+	margin: 0 auto;
+	min-height: 100%;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	filter: blur(6px);
+}
+
+.wrapper--sun:before {
+	background-image: url('/assets/img/sun-bg.jpg');
+}
+.wrapper--rain:before {
+	background-image: url('/assets/img/rain-bg.jpg');
+}
+.wrapper--snow:before {
+	background-image: url('/assets/img/snow-bg.jpg');
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 72px;
+	font-weight: 600;
+	color: #f68f00;
+}
+
+.buttons {
+	display: flex;
+
+	margin: 40px 0 60px;
+}
+
+.button {
+	min-width: 160px;
+	width: 160px;
+	height: 160px;
+	margin: 0 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+	border: gray solid 2px;
+	border-radius: 20px;
+	background-size: cover;
+}
+
+.button div {
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.button div.pause {
+	background-image: url('/assets/icons/pause.svg');
+}
+
+.button--sun {
+	background-image: url('/assets/img/sun-bg.jpg');
+}
+.button--sun div {
+	background-image: url('/assets/icons/sun.svg');
+}
+
+.button--rain {
+	background-image: url('/assets/img/rain-bg.jpg');
+}
+.button--rain div {
+	background-image: url('/assets/icons/cloud-rain.svg');
+}
+
+.button--snow {
+	background-image: url('/assets/img/snow-bg.jpg');
+}
+.button--snow div {
+	background-image: url('/assets/icons/cloud-snow.svg');
+}
