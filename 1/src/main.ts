@@ -1,3 +1,5 @@
+import { totalPrice } from './total-price';
+
 const wrapper = document.querySelector('.wrapper') as HTMLDivElement;
 const audio = document.querySelector('audio') as HTMLAudioElement;
 const playButtons = document.querySelectorAll('.button') as NodeListOf<HTMLDivElement>;
@@ -58,3 +60,5 @@ for (let i = 0; i < playButtons.length; i++) {
 		}
 	});
 }
+
+console.log(totalPrice({ price: 100000, discount: 25, isInstallment: true, months: 12 }))
