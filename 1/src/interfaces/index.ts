@@ -5,11 +5,18 @@ export interface IPostForNormalizeData {
 }
 
 export interface IById {
-	[key: string]: IPostForNormalizeData
+	[key: string]: IPostForNormalizeData;
 }
 
 export interface INormalizeData {
-	byId: IById,
-	allIds: string[],
+	byId: IById;
+	allIds: string[];
 }
 
+export interface IComment {
+	postId: number;
+	id: number;
+	name: string;
+	email: string;
+	body: string;
+}
